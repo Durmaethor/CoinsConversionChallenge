@@ -1,0 +1,25 @@
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Happy Monday!
+ **/
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int G = in.nextInt();
+        int S = in.nextInt();
+        int B = in.nextInt();
+        if (B >= 100) {
+            S += B / 100;
+            B = B - (B / 100) * 100;
+        }
+        if (S >= 100) {
+            G += S / 100;
+            S = S - (S / 100) * 100;
+        }
+        System.out.println(G + "G " + S + "S " + B + "B");
+    }
+}
