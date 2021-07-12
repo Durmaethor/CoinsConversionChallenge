@@ -1,0 +1,20 @@
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+g = int(input())
+s = int(input())
+b = int(input())
+
+be = b//100
+s+=be
+b-=be*100
+
+se=s//100
+g+=se
+s-=se*100
+
+
+print(str(g) + "G " + str(s) + "S " + str(b) + "B")
